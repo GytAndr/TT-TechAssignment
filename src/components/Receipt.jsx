@@ -1,7 +1,7 @@
 import React from "react";
 
-function Receipt() {
-	return <div>Receipt</div>;
+function Receipt({ id }) {
+	return <div>Receipt {id}</div>;
 }
 
 export default Receipt;

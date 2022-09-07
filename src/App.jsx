@@ -1,5 +1,18 @@
+import { useSelector } from "react-redux";
+import Receipt from "./components/Receipt";
+import Summary from "./components/Summary";
+
 function App() {
-	return <div className="App">APP</div>;
+	const receipts = useSelector((state) => state.receipt.receipts);
+	console.log(receipts); //TO DO Remove
+	return (
+		<div className="App">
+			{receipts.map((receipt) => (
+				<Receipt key={receipt.receiptId} id={receipt.receiptId} />
+			))}
+			<Summary />
+		</div>
+	);
 }
 
 export default App;

@@ -1,10 +1,13 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { addReceipt } from "../store/receiptSlice";
 
 function Summary() {
+	const dispatch = useDispatch();
 	return (
 		<div>
 			<div>summary:</div>
-			<button>Add receipt</button>
+			<button onClick={() => dispatch(addReceipt())}>Add receipt</button>
 		</div>
 	);
 }

@@ -16,3 +16,7 @@ export const receiptSlice = createSlice({
 		},
 	},
 });
+
+export const { addReceipt } = receiptSlice.actions;
+
+export default receiptSlice.reducer;
