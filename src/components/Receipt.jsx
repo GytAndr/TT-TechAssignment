@@ -1,6 +1,7 @@
 import React from "react";
 import Expense from "./Expense";
 import ExpenseForm from "./ExpenseForm";
+import ReceiptTotal from "./ReceiptTotal";
 
 function Receipt({ id, expenses }) {
 	return (
@@ -9,6 +10,7 @@ function Receipt({ id, expenses }) {
 			{expenses.map((expense) => (
 				<Expense key={expense.expenseId} expense={expense} receiptId={id} />
 			))}
+			<ReceiptTotal />
 		</div>
 	);
 }
