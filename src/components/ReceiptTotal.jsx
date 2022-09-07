@@ -1,17 +1,23 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import CurrencyInput from "react-currency-input-field";
 
 function ReceiptTotal({ expenses, receiptId }) {
 	const receiptTotal = expenses.reduce(
 		(total, exp) =>
-			parseInt(exp.expenseAmount === "" ? 0 : exp.expenseAmount) + total,
+			// prettier-ignore
+			parseFloat(exp.expenseAmount === "" ? 0.00 : exp.expenseAmount) + total,
 		0
 	);
 	console.log(receiptTotal);
 	return (
 		<div>
 			<div>Total</div>
-			<div>eur:{receiptTotal}</div>
+			<CurrencyInput
+				placeholder="€0.00"
+				prefix="€"
+				value={receiptTotal}
+				disabled
+			/>
 		</div>
 	);
 }
