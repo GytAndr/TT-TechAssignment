@@ -8,7 +8,7 @@ function Receipt({ id, expenses }) {
 			<ExpenseForm receiptId={id} />
 			<div>Receipt {id}</div>
 			{expenses.map((expense) => (
-				<Expense />
+				<Expense key={expense.expenseId} expense={expense} receiptId={id} />
 			))}
 		</div>
 	);

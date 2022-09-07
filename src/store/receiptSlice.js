@@ -25,9 +25,18 @@ export const receiptSlice = createSlice({
 			);
 			matchingReceipt.expenses.push(newExpense);
 		},
+		removeExpense: (state, actions) => {
+			const matchingReceipt = state.receipts.find(
+				(rec) => rec.receiptId === actions.payload.receiptId
+			);
+			const filteredExpenses = matchingReceipt.expenses.filter(
+				(exp) => exp.expenseId !== actions.payload.expenseId
+			);
+			matchingReceipt.expenses = filteredExpenses;
+		},
 	},
 });
 
-export const { addReceipt, addExpense } = receiptSlice.actions;
+export const { addReceipt, addExpense, removeExpense } = receiptSlice.actions;
 
 export default receiptSlice.reducer;
