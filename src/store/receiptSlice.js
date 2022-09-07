@@ -23,7 +23,7 @@ export const receiptSlice = createSlice({
 			const matchingReceipt = state.receipts.find(
 				(rec) => rec.receiptId === actions.payload
 			);
-			matchingReceipt.expenses.push(newExpense);
+			matchingReceipt.expenses.unshift(newExpense);
 		},
 		removeExpense: (state, actions) => {
 			const matchingReceipt = state.receipts.find(

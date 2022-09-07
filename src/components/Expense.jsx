@@ -1,4 +1,5 @@
 import React from "react";
+import CurrencyInput from "react-currency-input-field";
 import { useDispatch } from "react-redux";
 import { removeExpense } from "../store/receiptSlice";
 
@@ -10,17 +11,9 @@ function Expense({ expense, receiptId }) {
 	};
 	return (
 		<div>
-			<input
-				type="text"
-				value={expense.expenseName}
-				placeholder="Expense name"
-			/>
-			<input
-				type="text"
-				value={`€${expense.expenseAmount}`}
-				placeholder="€0.00"
-			/>
-			<p>eur:{expense.expenseAmount}</p>
+			<input value={expense.expenseName} placeholder="Expense name" />
+			<CurrencyInput placeholder="€0.00" prefix="€" />
+			{/* <CurrencyInput placeholder="€0.00" value={expense.expenseAmount} /> */}
 			<button onClick={() => dispatch(removeExpense(payload))}>
 				remove expense
 			</button>
