@@ -17,8 +17,8 @@ export const receiptSlice = createSlice({
 		addExpense: (state, actions) => {
 			const newExpense = {
 				expenseId: uuid(),
-				expenseName: "test",
-				expenseAmount: 10,
+				expenseName: "",
+				expenseAmount: "",
 			};
 			const matchingReceipt = state.receipts.find(
 				(rec) => rec.receiptId === actions.payload

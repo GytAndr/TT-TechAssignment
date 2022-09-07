@@ -7,6 +7,7 @@ function Summary() {
 	return (
 		<div>
 			<div>summary:</div>
+			<div>TotalTotal:</div>
 			<button onClick={() => dispatch(addReceipt())}>Add receipt</button>
 		</div>
 	);

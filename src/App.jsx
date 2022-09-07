@@ -4,7 +4,6 @@ import Summary from "./components/Summary";
 
 function App() {
 	const receipts = useSelector((state) => state.receipt.receipts);
-	console.log(receipts); //TO DO Remove
 	return (
 		<div className="App">
 			{receipts.map((receipt) => (

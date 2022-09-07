@@ -10,8 +10,16 @@ function Expense({ expense, receiptId }) {
 	};
 	return (
 		<div>
-			Expense
-			<p>expense:{expense.expenseName}</p>
+			<input
+				type="text"
+				value={expense.expenseName}
+				placeholder="Expense name"
+			/>
+			<input
+				type="text"
+				value={`€${expense.expenseAmount}`}
+				placeholder="€0.00"
+			/>
 			<p>eur:{expense.expenseAmount}</p>
 			<button onClick={() => dispatch(removeExpense(payload))}>
 				remove expense
