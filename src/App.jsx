@@ -8,7 +8,11 @@ function App() {
 	return (
 		<div className="App">
 			{receipts.map((receipt) => (
-				<Receipt key={receipt.receiptId} id={receipt.receiptId} />
+				<Receipt
+					key={receipt.receiptId}
+					id={receipt.receiptId}
+					expenses={receipt.expenses}
+				/>
 			))}
 			<Summary />
 		</div>
