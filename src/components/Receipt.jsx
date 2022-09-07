@@ -3,14 +3,18 @@ import Expense from "./Expense";
 import ExpenseForm from "./ExpenseForm";
 import ReceiptTotal from "./ReceiptTotal";
 
-function Receipt({ id, expenses }) {
+function Receipt({ receiptId, expenses }) {
 	return (
 		<div>
-			<ExpenseForm receiptId={id} />
+			<ExpenseForm receiptId={receiptId} />
 			{expenses.map((expense) => (
-				<Expense key={expense.expenseId} expense={expense} receiptId={id} />
+				<Expense
+					key={expense.expenseId}
+					expense={expense}
+					receiptId={receiptId}
+				/>
 			))}
-			<ReceiptTotal />
+			<ReceiptTotal expenses={expenses} receiptId={receiptId} />
 		</div>
 	);
 }

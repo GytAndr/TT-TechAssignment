@@ -9,7 +9,7 @@ function App() {
 			{receipts.map((receipt) => (
 				<Receipt
 					key={receipt.receiptId}
-					id={receipt.receiptId}
+					receiptId={receipt.receiptId}
 					expenses={receipt.expenses}
 				/>
 			))}
