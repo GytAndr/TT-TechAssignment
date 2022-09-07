@@ -14,9 +14,20 @@ export const receiptSlice = createSlice({
 			};
 			state.receipts.push(newReceipt);
 		},
+		addExpense: (state, actions) => {
+			const newExpense = {
+				expenseId: uuid(),
+				expenseName: "test",
+				expenseAmount: 10,
+			};
+			const matchingReceipt = state.receipts.find(
+				(rec) => rec.receiptId === actions.payload
+			);
+			matchingReceipt.expenses.push(newExpense);
+		},
 	},
 });
 
-export const { addReceipt } = receiptSlice.actions;
+export const { addReceipt, addExpense } = receiptSlice.actions;
 
 export default receiptSlice.reducer;
