@@ -43,10 +43,24 @@ export const receiptSlice = createSlice({
 			);
 			matchingExpense.expenseName = actions.payload.value;
 		},
+		updateExpenseAmount: (state, actions) => {
+			const matchingReceipt = state.receipts.find(
+				(rec) => rec.receiptId === actions.payload.receiptId
+			);
+			const matchingExpense = matchingReceipt.expenses.find(
+				(exp) => exp.expenseId === actions.payload.expenseId
+			);
+			matchingExpense.expenseAmount = actions.payload.value;
+		},
 	},
 });
 
-export const { addReceipt, addExpense, removeExpense, updateExpenseName } =
-	receiptSlice.actions;
+export const {
+	addReceipt,
+	addExpense,
+	removeExpense,
+	updateExpenseName,
+	updateExpenseAmount,
+} = receiptSlice.actions;
 
 export default receiptSlice.reducer;
