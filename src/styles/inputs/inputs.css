@@ -28,15 +28,4 @@
 }
 .total-all {
   font-size: 20px;
-}
-
-.receipt-categories {
-  border: none;
-  height: 32px;
-  color: #52526A;
-  text-indent: 10px;
-  font-weight: 600;
-}
-.receipt-categories option {
-  border-bottom: #52526A 1px solid;
 }/*# sourceMappingURL=inputs.css.map */
