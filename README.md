@@ -1,10 +1,10 @@
-# Receipt tracker
+## Receipt tracker
 
 Technical assignment to create receipt tracker.
 
-Live demo :
+Live demo : https://gytandr.github.io/TT-TechAssignment/
 
-## Description
+### Description
 
 This app keeps track of expenses and calculates total amount of each receipt and total amount of all receipts.
 
@@ -30,4 +30,21 @@ Prerequisites: Git and Node.js
 
 ```
 # Clone this repository
+git clone https://github.com/GytAndr/TT-TechAssignment.git
+
+# go into the repository
+cd TT-TechAssignment
+
+# install dependancies
+npm install
+
+## Execute app
+
+# to run dev version
+npm run dev
+
+# to run prod version
+npm run build
+npm run preview
+
 ```
