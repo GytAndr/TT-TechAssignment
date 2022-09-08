@@ -1,3 +1,6 @@
-.red {
-  color: red;
+@import './inputs/inputs';
+@import './buttons/buttons';
+
+body {
+  font-family: 'HKGroteskRegular';
 }

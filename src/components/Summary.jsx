@@ -17,14 +17,22 @@ function Summary() {
 	}, 0);
 	return (
 		<div>
-			<div>TotalTotal:</div>
-			<CurrencyInput
-				placeholder="€0.00"
-				prefix="€"
-				value={totalAllReceipts}
-				disabled
-			/>
-			<button onClick={() => dispatch(addReceipt())}>Add receipt</button>
+			<div>
+				<div>Total</div>
+				<CurrencyInput
+					placeholder="€0.00"
+					prefix="€"
+					value={totalAllReceipts}
+					disabled
+					className="text"
+				/>
+			</div>
+			<button
+				onClick={() => dispatch(addReceipt())}
+				className="btn-add-receipt"
+			>
+				Add receipt
+			</button>
 		</div>
 	);
 }
