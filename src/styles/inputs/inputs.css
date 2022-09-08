@@ -10,10 +10,12 @@
 }
 .expense-input-name {
   text-indent: 10px;
+  width: 65%;
 }
 .expense-input-amount {
   text-align: right;
   padding-right: 5px;
+  max-width: 30%;
 }
 
 .total, .total-all, .total-receipt {
@@ -25,6 +27,7 @@
 .total-receipt {
   font-size: 18px;
   text-align: right;
+  font-weight: bold;
 }
 .total-all {
   font-size: 20px;

@@ -5,7 +5,7 @@ import ReceiptTotal from "./ReceiptTotal";
 
 function Receipt({ receiptId, expenses }) {
 	return (
-		<div>
+		<div className="col-sm-12 col-md-6 col-xl-4 px-md-2">
 			<ExpenseForm receiptId={receiptId} />
 			{expenses.map((expense) => (
 				<Expense

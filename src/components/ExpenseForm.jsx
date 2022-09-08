@@ -18,7 +18,7 @@ function ExpenseForm({ receiptId }) {
 	];
 	const defaultSelectText = "Select:";
 	return (
-		<div>
+		<div className="d-flex justify-content-between expense-form">
 			<Categories
 				defaultText={defaultSelectText}
 				optionsList={countryList}

@@ -1,31 +1,31 @@
 .btn-add-receipt {
-  font-weight: bold;
-  background-color: #F0A023;
-  color: #ffffff;
-  border-radius: 19px;
-  border: none;
-  height: 38px;
-  width: 125px;
+	font-weight: bold;
+	background-color: #f0a023;
+	color: #ffffff;
+	border-radius: 19px;
+	border: none;
+	height: 38px;
+	min-width: 125px;
 }
 .btn-add-receipt:hover {
-  transform: scale(1.01);
+	transform: scale(1.01);
 }
 .btn-add-receipt:active {
-  background-color: rgba(240, 160, 35, 0.8);
+	background-color: rgba(240, 160, 35, 0.8);
 }
 
 .btn-add-expense {
-  font-weight: bold;
-  height: 38px;
-  width: 125px;
-  color: #ffffff;
-  border-radius: 19px;
-  border: 2px solid #F0A023;
-  background-color: rgb(37, 11, 56);
+	font-weight: bold;
+	height: 38px;
+	width: 125px;
+	color: #ffffff;
+	border-radius: 19px;
+	border: 2px solid #f0a023;
+	background-color: rgb(37, 11, 56);
 }
 .btn-add-expense:hover {
-  transform: scale(1.01);
+	transform: scale(1.01);
 }
 .btn-add-expense:active {
-  background-color: rgb(57, 11, 86);
-}/*# sourceMappingURL=buttons.css.map */
+	background-color: rgb(57, 11, 86);
+} /*# sourceMappingURL=buttons.css.map */

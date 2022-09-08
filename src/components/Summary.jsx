@@ -17,7 +17,7 @@ function Summary() {
 	}, 0);
 	return (
 		<div className="align-self-end d-flex summary">
-			<div className="d-flex align-items-center gap-2">
+			<div className="half-width d-flex  align-items-center gap-2">
 				<p className="total-text">Total</p>
 				<CurrencyInput
 					placeholder="€0.00"

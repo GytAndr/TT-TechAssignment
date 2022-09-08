@@ -10,11 +10,13 @@
   &-name {
     @extend .expense-input;
     text-indent: 10px;
+    width: 65%;
   }
   &-amount {
     @extend .expense-input;
     text-align: right;
     padding-right: 5px;
+    max-width: 30%;
   }
 }
 .total {
@@ -27,6 +29,7 @@
     @extend .total;
     font-size: 18px;
     text-align: right;
+    font-weight: bold;
   }
   &-all {
     @extend .total;

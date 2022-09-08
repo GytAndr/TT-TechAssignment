@@ -25,7 +25,7 @@
 }
 
 .selected-text.active::after {
-	top: 13px;
+	top: 14px;
 	transform: rotate(-135deg);
 }
 
@@ -40,6 +40,9 @@ ul {
 	padding: 7px 11px;
 	border-radius: 4px;
 	background-color: #fff;
+	z-index: 1000;
+	width: 88vw;
+	box-shadow: 0 0 18px 0 rgba(37, 11, 56, 0.25);
 }
 
 li {
@@ -47,7 +50,7 @@ li {
 	padding: 3px 6px;
 
 	background: #fff;
-	border-bottom: 1px solid #52526a;
+	border-bottom: 1px solid #e8dfed;
 	height: 34px;
 	cursor: pointer;
 	text-align: left;

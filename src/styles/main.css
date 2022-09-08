@@ -10,10 +10,12 @@
 }
 .expense-input-name {
   text-indent: 10px;
+  width: 65%;
 }
 .expense-input-amount {
   text-align: right;
   padding-right: 5px;
+  max-width: 30%;
 }
 
 .total, .total-all, .total-receipt {
@@ -25,6 +27,7 @@
 .total-receipt {
   font-size: 18px;
   text-align: right;
+  font-weight: bold;
 }
 .total-all {
   font-size: 20px;
@@ -89,7 +92,7 @@
 }
 
 .selected-text.active::after {
-  top: 13px;
+  top: 14px;
   transform: rotate(-135deg);
 }
 
@@ -104,13 +107,16 @@ ul {
   padding: 7px 11px;
   border-radius: 4px;
   background-color: #fff;
+  z-index: 1000;
+  width: 88vw;
+  box-shadow: 0 0 18px 0 rgba(37, 11, 56, 0.25);
 }
 
 li {
   list-style-type: none;
   padding: 3px 6px;
   background: #fff;
-  border-bottom: 1px solid #52526a;
+  border-bottom: 1px solid #e8dfed;
   height: 34px;
   cursor: pointer;
   text-align: left;
@@ -135,11 +141,47 @@ li:hover {
 .summary {
   border-top: #E8DFED 1px solid;
   padding: 16px 20px;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+}
+
+.expense-form {
+  background-color: #250B38;
+  padding: 11px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.half-width {
+  max-width: 50%;
+}
+
+.expence-total {
+  padding: 11px;
+  background-color: #F4EEF7;
+  align-items: center;
+  color: #250B38;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.expence-single {
+  background-color: #F4EEF7;
+  padding: 11px;
+  border-bottom: 1px solid #E8DFED;
+  display: flex;
+  justify-content: space-between;
+}
+.expence-single:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .total-text {
   font-size: 20px;
   margin: 0;
+  font-weight: bold;
 }
 
 body {

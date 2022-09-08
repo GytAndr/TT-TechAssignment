@@ -39,7 +39,7 @@ function Expense({ expense, receiptId }) {
 		}
 	};
 	return (
-		<div>
+		<div className="expence-single gap-3">
 			<input
 				value={expense.expenseName}
 				placeholder="Expense name"

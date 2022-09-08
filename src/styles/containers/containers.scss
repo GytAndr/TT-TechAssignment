@@ -4,4 +4,30 @@ min-height: 100vh;
 .summary {
   border-top: #E8DFED 1px solid;
   padding: 16px 20px;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
 }
+.expense-form {
+  background-color: #250B38;
+  padding: 11px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.half-width {
+  max-width: 50%;
+}
+.expence-total {
+  padding: 11px;
+  background-color: #F4EEF7;
+  align-items: center;
+  color:  #250B38;
+}
+.expence-single {
+  background-color: #F4EEF7;
+  padding: 11px;
+  border-bottom: 1px solid #E8DFED;
+  display: flex;
+  justify-content: space-between;
+}
+

@@ -9,8 +9,8 @@ function ReceiptTotal({ expenses }) {
 		0
 	);
 	return (
-		<div>
-			<div>Total</div>
+		<div className="expence-total d-flex justify-content-between">
+			<span>Total</span>
 			<CurrencyInput
 				placeholder="€0.00"
 				prefix="€"

@@ -5,7 +5,7 @@ import Summary from "./components/Summary";
 function App() {
 	const receipts = useSelector((state) => state.receipt.receipts);
 	return (
-		<div className="container d-flex flex-colum full-height">
+		<div className="container d-flex flex-column flex-md-row full-height flex-wrap">
 			{receipts.map((receipt) => (
 				<Receipt
 					key={receipt.receiptId}
