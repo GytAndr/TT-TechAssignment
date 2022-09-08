@@ -14,7 +14,7 @@ function Receipt({ receiptId, expenses }) {
 					receiptId={receiptId}
 				/>
 			))}
-			<ReceiptTotal expenses={expenses} receiptId={receiptId} />
+			<ReceiptTotal expenses={expenses} />
 		</div>
 	);
 }
