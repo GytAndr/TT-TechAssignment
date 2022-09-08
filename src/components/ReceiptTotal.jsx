@@ -14,7 +14,7 @@ function ReceiptTotal({ expenses }) {
 			<CurrencyInput
 				placeholder="€0.00"
 				prefix="€"
-				value={receiptTotal}
+				value={receiptTotal.toFixed(2)}
 				disabled
 			/>
 		</div>

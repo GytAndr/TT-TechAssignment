@@ -35,18 +35,23 @@ function Expense({ expense, receiptId }) {
 				value={expense.expenseName}
 				placeholder="Expense name"
 				onChange={(event) => onNameChange(event)}
+				className="expense-input-name"
 			/>
 			<CurrencyInput
 				placeholder="€0.00"
 				prefix="€"
 				value={expense.expenseAmount}
 				onValueChange={(value) => onAmountChange(value)}
+				className="expense-input-amount"
 			/>
-			<button onClick={() => dispatch(removeExpense(payload))}>
-				remove expense
-			</button>
 		</div>
 	);
+	//added button to remove expense, but since there is no such button in design it was removed}
+	{
+		/* <button onClick={() => dispatch(removeExpense(payload))}>
+		remove expense
+	</button> */
+	}
 }
 
 export default Expense;

@@ -22,8 +22,10 @@ function Summary() {
 				<CurrencyInput
 					placeholder="€0.00"
 					prefix="€"
-					value={totalAllReceipts}
+					value={totalAllReceipts.toFixed(2)}
 					disabled
+					allowDecimals
+					decimalsLimit={2}
 					className="text"
 				/>
 			</div>

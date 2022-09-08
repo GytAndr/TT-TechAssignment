@@ -1,0 +1,18 @@
+.expense-input {
+  font-size: 14px;
+  border: none;
+  height: 32px;
+  color: #52526A;
+  &:focus {
+    outline: none;
+  }
+  &-name {
+    @extend .expense-input;
+    text-indent: 10px;
+  }
+  &-amount {
+    @extend .expense-input;
+    text-align: right;
+    padding-right: 5px;
+  }
+}

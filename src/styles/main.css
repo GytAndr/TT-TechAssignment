@@ -1,3 +1,20 @@
+.expense-input, .expense-input-amount, .expense-input-name {
+  font-size: 14px;
+  border: none;
+  height: 32px;
+  color: #52526A;
+}
+.expense-input:focus, .expense-input-amount:focus, .expense-input-name:focus {
+  outline: none;
+}
+.expense-input-name {
+  text-indent: 10px;
+}
+.expense-input-amount {
+  text-align: right;
+  padding-right: 5px;
+}
+
 .btn-add-receipt {
   font-weight: bold;
   background-color: #F0A023;
