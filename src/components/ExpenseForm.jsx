@@ -22,7 +22,10 @@ function ExpenseForm({ receiptId }) {
 				<option value="Houseware">Houseware</option>
 				<option value="Entertainment">Entertainment</option>
 			</select>
-			<button onClick={() => dispatch(addExpense(receiptId))}>
+			<button
+				onClick={() => dispatch(addExpense(receiptId))}
+				className="btn-add-expense"
+			>
 				Add expense
 			</button>
 		</div>

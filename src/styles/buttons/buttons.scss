@@ -6,11 +6,25 @@
   border: none;
   height: 38px;
   width: 125px;
-  cursor: pointer;
   &:hover {
     transform: scale(1.01);
   }
   &:active {
     background-color:rgba(240, 160, 35, 0.8);
+  }
+}
+.btn-add-expense {
+  font-weight: bold;
+  height: 38px;
+  width: 125px;
+  color: #ffffff;
+  border-radius: 19px;
+  border: 2px solid #F0A023;
+  background-color: rgb(37, 11, 56);
+  &:hover {
+    transform: scale(1.01);
+  }
+  &:active {
+    background-color:rgb(57, 11, 86);
   }
 }
