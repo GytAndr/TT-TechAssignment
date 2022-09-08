@@ -5,7 +5,7 @@ function ReceiptTotal({ expenses }) {
 	const receiptTotal = expenses.reduce(
 		(total, exp) =>
 			// prettier-ignore
-			parseFloat(exp.expenseAmount === "" ? 0.00 : exp.expenseAmount) + total,
+			parseFloat(exp.expenseAmount == "" ? 0.00 : exp.expenseAmount) + total,
 		0
 	);
 	return (

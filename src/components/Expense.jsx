@@ -22,12 +22,21 @@ function Expense({ expense, receiptId }) {
 		dispatch(updateExpenseName(payload));
 	};
 	const onAmountChange = (value) => {
-		const payload = {
-			receiptId: receiptId,
-			expenseId: expense.expenseId,
-			value: value,
-		};
-		dispatch(updateExpenseAmount(payload));
+		if (value) {
+			const payload = {
+				receiptId: receiptId,
+				expenseId: expense.expenseId,
+				value: value,
+			};
+			dispatch(updateExpenseAmount(payload));
+		} else {
+			const payload = {
+				receiptId: receiptId,
+				expenseId: expense.expenseId,
+				value: 0,
+			};
+			dispatch(updateExpenseAmount(payload));
+		}
 	};
 	return (
 		<div>
@@ -41,6 +50,7 @@ function Expense({ expense, receiptId }) {
 				placeholder="€0.00"
 				prefix="€"
 				value={expense.expenseAmount}
+				defaultValue={0}
 				onValueChange={(value) => onAmountChange(value)}
 				className="expense-input-amount"
 			/>
