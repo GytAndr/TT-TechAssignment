@@ -1,3 +1,8 @@
 .full-height {
   min-height: 100vh;
+}
+
+.summary {
+  border-top: #E8DFED 1px solid;
+  padding: 16px 20px;
 }/*# sourceMappingURL=containers.css.map */

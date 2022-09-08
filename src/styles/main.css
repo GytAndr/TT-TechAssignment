@@ -91,7 +91,6 @@
 .selected-text.active::after {
   top: 13px;
   transform: rotate(-135deg);
-  /* border-color: transparent transparent #fff transparent; */
 }
 
 ul {
@@ -131,6 +130,16 @@ li:hover {
 
 .full-height {
   min-height: 100vh;
+}
+
+.summary {
+  border-top: #E8DFED 1px solid;
+  padding: 16px 20px;
+}
+
+.total-text {
+  font-size: 20px;
+  margin: 0;
 }
 
 body {

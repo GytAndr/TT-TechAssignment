@@ -16,9 +16,9 @@ function Summary() {
 		return allTotal + expensesSum;
 	}, 0);
 	return (
-		<div className="align-self-end">
-			<div>
-				<div>Total</div>
+		<div className="align-self-end d-flex summary">
+			<div className="d-flex align-items-center gap-2">
+				<p className="total-text">Total</p>
 				<CurrencyInput
 					placeholder="€0.00"
 					prefix="€"
