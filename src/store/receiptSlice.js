@@ -10,6 +10,7 @@ export const receiptSlice = createSlice({
 		addReceipt: (state) => {
 			const newReceipt = {
 				receiptId: uuid(),
+				receiptCategory: "",
 				expenses: [],
 			};
 			state.receipts.push(newReceipt);
@@ -52,6 +53,12 @@ export const receiptSlice = createSlice({
 			);
 			matchingExpense.expenseAmount = actions.payload.value;
 		},
+		updateReceiptCategory: (state, actions) => {
+			const matchingReceipt = state.receipts.find(
+				(rec) => rec.receiptId === actions.payload.receiptId
+			);
+			matchingReceipt.receiptCategory = actions.payload.value;
+		},
 	},
 });
 
@@ -61,6 +68,7 @@ export const {
 	removeExpense,
 	updateExpenseName,
 	updateExpenseAmount,
+	updateReceiptCategory,
 } = receiptSlice.actions;
 
 export default receiptSlice.reducer;
