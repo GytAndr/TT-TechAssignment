@@ -3,6 +3,7 @@
   border: none;
   height: 32px;
   color: #52526A;
+  font-weight: 500;
 }
 .expense-input:focus, .expense-input-amount:focus, .expense-input-name:focus {
   outline: none;
@@ -13,6 +14,31 @@
 .expense-input-amount {
   text-align: right;
   padding-right: 5px;
+}
+
+.total, .total-all, .total-receipt {
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  color: #250B38;
+}
+.total-receipt {
+  font-size: 18px;
+  text-align: right;
+}
+.total-all {
+  font-size: 20px;
+}
+
+.receipt-categories {
+  border: none;
+  height: 32px;
+  color: #52526A;
+  text-indent: 10px;
+  font-weight: 600;
+}
+.receipt-categories option {
+  border-bottom: #52526A 1px solid;
 }
 
 .btn-add-receipt {

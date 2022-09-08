@@ -16,6 +16,7 @@ function ReceiptTotal({ expenses }) {
 				prefix="€"
 				value={receiptTotal.toFixed(2)}
 				disabled
+				className="total-receipt"
 			/>
 		</div>
 	);

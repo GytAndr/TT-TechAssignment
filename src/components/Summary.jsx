@@ -24,9 +24,7 @@ function Summary() {
 					prefix="€"
 					value={totalAllReceipts.toFixed(2)}
 					disabled
-					allowDecimals
-					decimalsLimit={2}
-					className="text"
+					className="total-all"
 				/>
 			</div>
 			<button
