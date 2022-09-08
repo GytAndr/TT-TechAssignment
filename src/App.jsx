@@ -5,7 +5,7 @@ import Summary from "./components/Summary";
 function App() {
 	const receipts = useSelector((state) => state.receipt.receipts);
 	return (
-		<div className="App">
+		<div className="container">
 			{receipts.map((receipt) => (
 				<Receipt
 					key={receipt.receiptId}
