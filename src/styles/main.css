@@ -30,17 +30,6 @@
   font-size: 20px;
 }
 
-.receipt-categories {
-  border: none;
-  height: 32px;
-  color: #52526A;
-  text-indent: 10px;
-  font-weight: 600;
-}
-.receipt-categories option {
-  border-bottom: #52526A 1px solid;
-}
-
 .btn-add-receipt {
   font-weight: bold;
   background-color: #F0A023;
@@ -71,6 +60,71 @@
 }
 .btn-add-expense:active {
   background-color: rgb(57, 11, 86);
+}
+
+.custom-select-container {
+  display: inline-block;
+  min-width: 170px;
+  text-align: center;
+  position: relative;
+}
+
+.selected-text {
+  background-color: #fff;
+  padding: 6px 20px;
+  text-align: left;
+  font-weight: 600;
+  color: #52526a;
+}
+
+.selected-text::after {
+  /* content: ""; */
+  content: url("../../images/arrow.svg");
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  border: 7px solid transparent;
+  border-color: #f0a023 transparent transparent transparent;
+}
+
+.selected-text.active::after {
+  top: 8px;
+  border-color: transparent transparent #fff transparent;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.select-options {
+  position: absolute;
+  width: 100%;
+  padding: 7px 11px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+li {
+  list-style-type: none;
+  padding: 3px 6px;
+  background: #fff;
+  border-bottom: 1px solid #52526a;
+  height: 34px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 600;
+  color: #52526a;
+  border-radius: 2px;
+}
+
+li:last-child {
+  border: none;
+}
+
+li:hover {
+  background-color: #f0a023;
+  color: #fff;
 }
 
 body {
