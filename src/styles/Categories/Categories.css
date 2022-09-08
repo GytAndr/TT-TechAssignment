@@ -17,14 +17,16 @@
 	content: "";
 	position: absolute;
 	right: 10px;
-	top: 16px;
-	border: 7px solid transparent;
-	border-color: #f0a023 transparent transparent transparent;
+	top: 13px;
+	border: solid #f0a023;
+	border-width: 0 2px 2px 0;
+	padding: 3px;
+	transform: rotate(45deg);
 }
 
 .selected-text.active::after {
-	top: 8px;
-	border-color: transparent transparent #fff transparent;
+	top: 13px;
+	transform: rotate(-135deg);
 }
 
 ul {

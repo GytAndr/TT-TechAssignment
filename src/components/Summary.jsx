@@ -16,7 +16,7 @@ function Summary() {
 		return allTotal + expensesSum;
 	}, 0);
 	return (
-		<div>
+		<div className="align-self-end">
 			<div>
 				<div>Total</div>
 				<CurrencyInput
