@@ -21,6 +21,7 @@ This app keeps track of expenses and calculates total amount of each receipt and
 
 - Vite.js
 - React.js
+- Bootstrap
 - Redux / React-redux/ redux-toolkit
 - Scss
 
