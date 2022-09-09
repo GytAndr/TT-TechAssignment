@@ -75,6 +75,7 @@
 .selected-text {
   background-color: #fff;
   padding: 6px 20px;
+  border-radius: 4px;
   text-align: left;
   font-weight: 600;
   color: #52526a;
@@ -108,10 +109,15 @@ ul {
   border-radius: 4px;
   background-color: #fff;
   z-index: 1000;
-  width: 88vw;
+  width: 300px;
   box-shadow: 0 0 18px 0 rgba(37, 11, 56, 0.25);
 }
 
+@media screen and (max-width: 480px) {
+  .select-options {
+    width: 88vw;
+  }
+}
 li {
   list-style-type: none;
   padding: 3px 6px;
@@ -162,8 +168,6 @@ li:hover {
   background-color: #F4EEF7;
   align-items: center;
   color: #250B38;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
 }
 
 .expence-single {
@@ -172,10 +176,6 @@ li:hover {
   border-bottom: 1px solid #E8DFED;
   display: flex;
   justify-content: space-between;
-}
-.expence-single:first-child {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
 }
 
 .total-text {
